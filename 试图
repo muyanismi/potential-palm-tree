@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>木言中转站</title>
+
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#FFF8DC;
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC",
+                "Microsoft YaHei",sans-serif;
+}
+
+.text{
+    font-size:2rem;
+    color:#444;
+    text-align:center;
+    padding:20px;
+    letter-spacing:2px;
+}
+</style>
+</head>
+
+<body>
+    <div class="text">
+        我不审判你，我爱你。
+    </div>
+</body>
+</html>
