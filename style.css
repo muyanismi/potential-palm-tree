@@ -137,3 +137,43 @@ opacity:.5;
 cursor:pointer;
 
 }
+.record-page{
+
+padding:60px;
+text-align:center;
+
+}
+
+
+.record-page h1{
+
+font-size:50px;
+font-weight:300;
+
+}
+
+
+.item{
+
+background:#fffdf5;
+
+padding:30px;
+
+margin:30px auto;
+
+max-width:600px;
+
+border-radius:20px;
+
+font-size:22px;
+
+}
+
+
+.item span{
+
+font-size:14px;
+
+opacity:.5;
+
+}
