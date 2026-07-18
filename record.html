@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>我的记录</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="record-page">
+
+
+<h1>
+我的记录
+</h1>
+
+
+<div id="records">
+
+</div>
+
+
+</div>
+
+
+<script>
+
+
+let records =
+JSON.parse(
+localStorage.getItem("myRecord")
+||
+"[]"
+);
+
+
+
+let box =
+document.getElementById("records");
+
+
+
+if(records.length===0){
+
+box.innerHTML=
+"还没有留下任何记录";
+
+}
+
+
+records.reverse().forEach(item=>{
+
+
+let div=document.createElement("div");
+
+
+div.className="item";
+
+
+div.innerHTML=
+
+`
+<p>${item.text}</p>
+
+<span>
+${item.time}
+</span>
+`;
+
+
+box.appendChild(div);
+
+
+});
+
+
+</script>
+
+
+</body>
+
+</html>
