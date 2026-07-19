@@ -18,7 +18,7 @@ document.getElementById("tip");
 
 
 
-title.onclick=function(){
+title.onclick=async function(){
 
 
 title.style.display="none";
@@ -66,17 +66,6 @@ id:
 };
 
 
-
-let old=
-JSON.parse(
-localStorage.getItem("myRecord")
-||
-"[]"
-);
-
-
-
-old.push(record);
 
 
 await supabase
