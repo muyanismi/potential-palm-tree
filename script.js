@@ -32,30 +32,25 @@ tip.innerHTML=
 
 input.addEventListener(
 "keydown",
-async function(e){
-
+function(e){
 
 if(e.key==="Enter"){
 
-
-let text=input.value.trim();
-
+let text = input.value.trim();
 
 if(text==="") return;
 
 
-
-let record={
+let record = {
 
 text:text,
 
-time:new Date()
-.toLocaleString(),
+time:new Date().toLocaleString(),
 
-id:
-"MY-"+Math.floor(Math.random()*999999)
+id:"MY-"+Math.floor(Math.random()*999999)
 
 };
+
 
 let old =
 JSON.parse(
@@ -74,6 +69,7 @@ JSON.stringify(old)
 );
 
 
+input.value="";
 
 
 input.style.display="none";
@@ -89,8 +85,4 @@ title.style.display="block";
 tip.innerHTML=
 "已匿名保存";
 
-
 }
-
-
-});
