@@ -79,11 +79,15 @@ localStorage.getItem("myRecord")
 old.push(record);
 
 
-localStorage.setItem(
-"myRecord",
-JSON.stringify(old)
-);
+await supabase
+.from("records")
+.insert({
 
+content:text,
+
+anonymous_id:"MY-xxxx"
+
+});
 
 
 input.style.display="none";
