@@ -1,4 +1,4 @@
-alert("木言要疯了");
+alert("木言忙碌一晚上，又回到起点了 哈哈");
 
 const title =
 document.getElementById("title");
