@@ -10,7 +10,7 @@ document.getElementById("tip");
 
 
 
-title.onclick=async function(){
+title.onclick=function(){
 
 
 title.style.display="none";
