@@ -1,11 +1,4 @@
-const supabaseUrl = "https://ubuwsozcvdgryttubtvj.supabase.co";
-const supabaseKey = "sb_publishable_za_WSL8sNmo_1Wa7FozwSw_4eAgFRkF";
 
-
-const supabase = window.supabase.createClient(
-    supabaseUrl,
-    supabaseKey
-);
 const title =
 document.getElementById("title");
 
@@ -67,15 +60,6 @@ id:
 
 
 
-await supabase
-.from("records")
-.insert({
-
-content:text,
-
-anonymous_id:"MY-xxxx"
-
-});
 
 
 input.style.display="none";
