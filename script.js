@@ -1,3 +1,12 @@
+const supabaseUrl = "https://ubuwsozcvdgryttubtvj.supabase.co/rest/v1/";
+
+const supabaseKey = "sb_publishable_za_WSL8sNmo_1Wa7FozwSw_4eAgFRkF";
+
+
+const supabase = window.supabase.createClient(
+    supabaseUrl,
+    supabaseKey
+);
 const title =
 document.getElementById("title");
 
