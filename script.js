@@ -1,5 +1,4 @@
-const supabaseUrl = "https://ubuwsozcvdgryttubtvj.supabase.co/rest/v1/";
-
+const supabaseUrl = "https://ubuwsozcvdgryttubtvj.supabase.co";
 const supabaseKey = "sb_publishable_za_WSL8sNmo_1Wa7FozwSw_4eAgFRkF";
 
 
@@ -40,7 +39,7 @@ tip.innerHTML=
 
 input.addEventListener(
 "keydown",
-function(e){
+async function(e){
 
 
 if(e.key==="Enter"){
