@@ -1,3 +1,4 @@
+alert("JS运行了");
 
 const title =
 document.getElementById("title");
