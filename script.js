@@ -1,4 +1,4 @@
-alert("JS运行了");
+alert("木言要疯了");
 
 const title =
 document.getElementById("title");
