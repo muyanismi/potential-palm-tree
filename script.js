@@ -57,7 +57,21 @@ id:
 
 };
 
+let old =
+JSON.parse(
+localStorage.getItem("myRecord")
+||
+"[]"
+);
 
+
+old.push(record);
+
+
+localStorage.setItem(
+"myRecord",
+JSON.stringify(old)
+);
 
 
 
